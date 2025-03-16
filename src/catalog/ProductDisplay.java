@@ -1,16 +1,20 @@
 package catalog;
 
 import model.Product;
+import utils.ValidationUtils;
 
 import java.util.List;
 
 public class ProductDisplay {
     public static void displayProductsWithPrices(List<Product> products) {
+        ValidationUtils.validateList(products, "Product list");
+
         if (products.isEmpty()) {
             System.out.println("No products available.");
-        } else {
-            products.forEach(product ->
-                    System.out.println("model.Product: " + product.getName() + ", price: " + product.getPrice() + " PLN"));
+            return;
         }
+
+        products.forEach(product ->
+                System.out.println("Product: " + product.getName() + ", price: " + product.getPrice() + " PLN"));
     }
 }

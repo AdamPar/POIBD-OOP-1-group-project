@@ -1,8 +1,12 @@
 public class Main {
     public static void main(String[] args) {
 
-        Product product_1 = new Product(1, "Bike", 300.50, "Sport", true);
+        Catalog catalog = new Catalog();
 
-        product_1.printProductInfo();
+        catalog.displayCatalogProductsAlphabetically();
+
+        catalog.displayAvailableProductsByCategory("Electronics");
+
+        catalog.displayAvailableProductsByCategory("Clothing");
     }
 }

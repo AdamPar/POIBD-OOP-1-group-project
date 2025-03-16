@@ -1,11 +1,14 @@
 public class Product {
-    private int id;
+    private final int id;
     private String name;
     private double price;
     private String category;
     private boolean isAvailable;
 
     public Product(int id, String name, double price, String category, boolean isAvailable) {
+        if (id <= 0) {
+            throw new IllegalArgumentException("ID must be greater than 0.");
+        }
         this.id = id;
         setName(name);
         setPrice(price);
@@ -29,13 +32,13 @@ public class Product {
     }
 
     public double getPrice() {
-        if (price <= 0) {
-            throw new IllegalArgumentException("Price must be greater than 0.");
-        }
         return price;
     }
 
     public void setPrice(double price) {
+        if (price <= 0) {
+            throw new IllegalArgumentException("Price must be greater than 0.");
+        }
         this.price = price;
     }
 

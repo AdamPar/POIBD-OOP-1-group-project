@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello, World!");
+
+        Product product_1 = new Product(1, "Bike", 300.50, "Sport", true);
+
+        product_1.printProductInfo();
     }
 }

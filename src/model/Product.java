@@ -1,3 +1,5 @@
+package model;
+
 public class Product {
     private final int id;
     private String name;
@@ -51,11 +53,13 @@ public class Product {
             throw new IllegalArgumentException("Category cannot be empty.");
         }
 
-        // TODO: Add future validation for allowed (fixed set) categories
-        // List<String> validCategories = Arrays.asList("Electronics", "Clothing", "Food");
-        // if (!validCategories.contains(category)) {
-        //    throw new IllegalArgumentException("Invalid category.");
-        // }
+        /*
+         TODO: Add future validation for allowed (fixed set) categories
+         List<String> validCategories = Arrays.asList("Electronics", "Clothing", "Food");
+         if (!validCategories.contains(category)) {
+            throw new IllegalArgumentException("Invalid category.");
+         }
+        */
 
         this.category = category;
     }
@@ -70,7 +74,7 @@ public class Product {
 
     public void printProductInfo() {
         System.out.println("Id: " + id);
-        System.out.println("Product: " + name);
+        System.out.println("model.Product: " + name);
         System.out.println("Price: " + price + " PLN");
         System.out.println("Category: " + category);
         System.out.println("Available: " + isAvailable);

@@ -1,5 +1,5 @@
-import catalog.Catalog;
 import cart.Cart;
+import catalog.Catalog;
 import model.Product;
 import promotion.Promotion;
 import promotion.Promotion.PromotionEnum;
@@ -29,7 +29,7 @@ public class Main {
 
         cart.removeProduct(headphones);
 
-        System.out.println("\nZawartość koszyka:");
+        System.out.println("\nCart contents:");
         cart.displayCartContents();
         cart.displayTotalPrice();
     }

@@ -31,11 +31,11 @@ public class Cart {
 
     public void displayCartContents() {
         if (products.isEmpty()) {
-            System.out.println("Koszyk jest pusty.");
+            System.out.println("Cart is empty.");
             return;
         }
         for (Map.Entry<Product, Integer> entry : products.entrySet()) {
-            System.out.println(entry.getKey().getName() + ", " + entry.getValue() + " szt.");
+            System.out.println(entry.getKey().getName() + ", " + entry.getValue() + " units.");
         }
     }
 
@@ -44,7 +44,7 @@ public class Cart {
     }
 
     public void displayTotalPrice() {
-        System.out.printf("Cena całkowita koszyka: %.2f PLN\n", getTotalPrice());
+        System.out.printf("Total cart price: %.2f PLN\n", getTotalPrice());
     }
 
 }

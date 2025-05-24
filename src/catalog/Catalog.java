@@ -1,7 +1,7 @@
 package catalog;
 
-import model.Product;
 import java.util.List;
+import model.Product;
 
 public class Catalog {
     private final List<Product> products;
@@ -38,5 +38,9 @@ public class Catalog {
             ProductDisplay.displayProductsWithPrices(sortedByPrice);
         }
         System.out.println();
+    }
+
+    public List<Product> getProducts() {
+        return products;
     }
 }

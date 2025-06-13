@@ -3,7 +3,7 @@ package catalog;
 import java.util.List;
 import model.Product;
 
-public class Catalog {
+public final class Catalog {
     private final List<Product> products;
 
     public Catalog() {

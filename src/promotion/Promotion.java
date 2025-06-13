@@ -3,7 +3,7 @@ package promotion;
 import java.util.*;
 import model.Product;
 
-public class Promotion {
+public final class Promotion {
     public enum PromotionEnum {
         NONE,
         PERCENTAGE_DISCOUNT,

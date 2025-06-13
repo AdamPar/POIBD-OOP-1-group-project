@@ -1,16 +1,15 @@
 package cart;
 
+import java.util.*;
 import model.Product;
 import promotion.Promotion;
-import java.util.*;
-import javax.swing.ProgressMonitorInputStream;
 
-public class Cart {
+public final class Cart {
     private final Map<Product, Integer> products;
     private final Promotion promotion;
 
     public Cart(Promotion promotion) {
-        this.products = new HashMap<>();
+        this.products = new HashMap();
         this.promotion = promotion;
     }
 

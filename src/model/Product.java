@@ -2,7 +2,7 @@ package model;
 
 import utils.ValidationUtils;
 
-public class Product {
+public final class Product {
     private final int id;
     private String name;
     private double price;
@@ -18,7 +18,7 @@ public class Product {
         this.isAvailable = isAvailable;
     }
 
-    public double getId() {
+    public int getId() {
         return id;
     }
 
